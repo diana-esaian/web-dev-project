@@ -1,0 +1,37 @@
+{% extends "base.html.j2" %}
+
+{% block main %}
+<article>
+    <div style="background-color: rgb(174, 174, 174); height: 200px;">
+        <h2 style="color:white;text-align: center; vertical-align: middle;line-height: 200px;">О проекте</h2>
+    </div>
+    <div class="p-5">
+        <p style="text-align: justify;">Исследование затронуло корпус литературы ХХI–XXI веков с упоминанием московских топонимов. Целью нашего проекта является анализ частотности локаций, которые упоминаются в произведениях русской литературы XIX–XXI веков. Эти семиотические данные мы планируем наложить на существующие социологические представления о популярности тех или иных районов Москвы.</p>
+        <p style="text-align: justify;">Промежуточным результатом нашего исследования стал код, использующий NLTK библиотеки Spacy и Natasha и черный список немосковских топонимов, которые при анализе большого корпуса русской литературы позволят составить данные для дальнейшей их визуализации на карте Москвы и Московской области. Также созданные инструменты позволят нам подтвердить или опровергнуть гипотезу о том, что социологическое представление о престижности районов Москвы, описанное в статье О. Е. Трущенко, напрямую соотносится с культуромическим, то есть полученным при подсчете частотности употребления тех или иных топонимов в русской литературе XIX–XXI веков.</p>
+    </div>
+    <div>
+        <h4 style="text-align: center; vertical-align: middle;">Наша команда</h4>
+    </div>
+    <div class="container text-center p-3">
+        <div class="row">
+            <div class="col">
+                <img src="{{ url_for('static', filename='img/person-icon.png') }}" style="border: 1px solid rgb(174, 174, 174);" alt="фотография Дианы" >
+                <figcaption class="p-3" style="font-weight: bold;">Есаян Диана</figcaption>
+            </div>
+            <div class="col">
+                <img src="{{ url_for('static', filename='img/person-icon.png') }}" style="border: 1px solid rgb(174, 174, 174);" alt="фотография Дарьи" >
+                <figcaption class="p-3" style="font-weight: bold;">Герасименко Дарья</figcaption>
+            </div>
+            <div class="col">
+                <img src="{{ url_for('static', filename='img/person-icon.png') }}" style="border: 1px solid rgb(174, 174, 174);" alt="фотография Михаила" >
+                <figcaption class="p-3" style="font-weight: bold;">Гольцман Михаил</figcaption>
+            </div>
+            <div class="col">
+                <img src="{{ url_for('static', filename='img/person-icon.png') }}" style="border: 1px solid rgb(174, 174, 174);" alt="фотография Георгия" >
+                <figcaption class="p-3" style="font-weight: bold;">Гончаренко Георгий</figcaption>
+            </div>
+        </div>
+      </div>
+      
+<article>
+{% endblock %}

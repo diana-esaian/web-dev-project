@@ -1,0 +1,23 @@
+{
+  "name": "web-dev-project",
+  "version": "1.0.0",
+  "description": "The work is devoted to the statistical analysis of the frequency of the use of Moscow toponyms in the Russian literature of the 19th–21st centuries and its comparison with sociological optics. Methods for extracting named entities from texts and previous studies are described, a comparison of the operation of existing NER libraries is made, and future research plans are described.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diana-esaian/web-dev-project.git"
+  },
+  "author": "Diana Esaian <diana.esaian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diana-esaian/web-dev-project/issues"
+  },
+  "homepage": "https://github.com/diana-esaian/web-dev-project#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3"
+  }
+}
