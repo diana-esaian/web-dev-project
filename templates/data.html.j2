@@ -1,17 +1,28 @@
 {% extends "base.html.j2" %}
 {% block main %}
 <article>
-    <div style="background-color: rgb(174, 174, 174); height: 200px;">
-        <h2 style="color:white;text-align: center; vertical-align: middle;line-height: 200px;">Данные</h2>
+    <div class="mainheader">
+        <h2 class="maintitle">Данные</h2>
     </div>
-        
-    <div>
-        <form action="#" method="post">
-            <p>Слово:</p>
-            <p><input type="text" name="nm"/></p>
-            <p><input type="submit" value="submit"/></p>
-        </form>
+    <p class = "p-5"> Небольшое описание наших данных: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nisi orci, vel tincidunt dolor lacinia eu. 
+        Vestibulum varius bibendum massa et consectetur. Phasellus finibus nunc elementum, fermentum tellus non, faucibus erat. 
+        Etiam gravida vitae enim ac elementum. Donec consequat dapibus rutrum. Nulla commodo mattis faucibus. Suspendisse justo risus, 
+        aliquet vel interdum sed, sollicitudin in massa. Mauris lorem metus, efficitur a neque sed, gravida iaculis purus.
+    </p>
+    <p style="text-align:center">Выберите, по какому показателю вы хотите изучить частотность топонимов</p>
+    <div class="text-center">
+        <button type="button" class="btn btn-outline-secondary btn-lg dropdown-toggle databutton" data-bs-toggle="dropdown" aria-expanded="false">Век</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg databutton"  onclick="showCenturyTable()">Топоним</button>
+        <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="#">XVIII век</a></li>
+            <li><a class="dropdown-item" href="#">XIX век</a></li>
+            <li><a class="dropdown-item" href="#">XX век</a></li>
+            <li><a class="dropdown-item" href="#">XXI век</a></li>
+        </ul>
     </div>
+    <div id="table">
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </article>
 {% endblock %}

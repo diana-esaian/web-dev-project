@@ -1,0 +1,29 @@
+main {
+    position: relative; 
+    min-height: 100vh;
+}
+
+footer {
+    position: relative; 
+    width: 100%;
+}
+
+.mainheader {
+    background-color: rgb(174, 174, 174); 
+    height: 200px;
+}
+
+.maintitle {
+    color:white;
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+.teamphoto {
+    border: 1px solid rgb(174, 174, 174);
+}
+
+.databutton {
+    width: 165px;
+}

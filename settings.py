@@ -9,17 +9,17 @@ RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
 
 schema = {
-    'firstname': {
+    'location': {
         'type': 'string',
         'minlength': 1,
-        'maxlength': 10,
-    },
-    'lastname': {
-        'type': 'string',
-        'minlength': 1,
-        'maxlength': 15,
+        'maxlength': 20,
         'required': True,
-        'unique': True,
+    
+    },
+    'frequency': {
+        'type': 'integer',
+        'minlength': 1,
+        'required': True,
     },
 }
 
