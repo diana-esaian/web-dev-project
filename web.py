@@ -1,4 +1,9 @@
-from flask import Flask, render_template
+import os 
+import requests
+
+from flask import Flask, render_template, request
+
+REST_URL = os
 
 app = Flask(__name__)
 
